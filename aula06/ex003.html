@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(129, 129, 168);
+            color: white; /* Cometário em CSS só funciona entre (/*  *semespaço/) para uma ou mais linhas */
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(201, 172, 6);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!-- Comentário em HTML só funciona entre (<--cometário-semespaço->) -->
+    <p>Já me livrei da maldição!</p>
+    <script>
+        //window.alert('Minha primeira mensagem'); // Comentário em JavaScrip igual do Java:
+        // Barra+barra para uma linha e (/*  *semespaço/) para várias linhas
+        //window.confirm('Está gostando do JS?') // Pode deixar sem ;
+        /*var nome = window.prompt('Qual é seu nome?')
+        alert('É um grande prazer em te conhecer, ' + nome + '!') // Concatenação usando + */
+
+        // var n1 = window.prompt('Digite um número: ') O Prompt lê como String
+        // var n2 = window.prompt('Digite outro número: ')
+
+        var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        
+        //window.alert('A soma dos valores é ' + String(s)) // String(s) ou s.toString converte para String
+
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Forma mais atual, entre crases
+    </script>
+</body>
+</html>
