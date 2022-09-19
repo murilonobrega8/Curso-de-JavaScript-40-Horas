@@ -1,6 +1,8 @@
+let sobrenome = document.querySelector('input#txtnome')
+var res = document.querySelector('div#res')
+
 function analisar() {
-        nome = 'Jair' // Saber como pegar variavel de arquivo HTML anterior e depois como reproduzir ele dentro da div
-        document.write(`Bem vindo(a), ${nome}! Seu nome tem ${nome.length} letras. Escrito em maiúsculas dessa maneira (${nome.toUpperCase()}) e em minúsculas dessa maneira (${nome.toLowerCase()})!`)
+        res.innerHTML = `Bem vindo(a), ${sobrenome}! Seu sobrenome tem ${sobrenome.length} letras. Escrito em maiúsculas dessa maneira (${sobrenome.toUpperCase()}) e em minúsculas dessa maneira (${sobrenome.toLowerCase()})!`
 }
 
 function continuar() {

@@ -1,5 +1,5 @@
-nome = window.prompt('Qual é seu nome?')
-        alert('É um grande prazer em te receber, ' + nome + '!')
+var nome = window.prompt('Qual é seu nome?')
+alert('É um grande prazer em te receber, ' + nome + '!')
 
 let a = window.document.querySelector('div#area')
 a.addEventListener('click', clicar) 
