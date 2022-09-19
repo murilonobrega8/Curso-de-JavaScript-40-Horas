@@ -6,6 +6,7 @@ body {
 header {
     color: white;
     text-align: center;
+    font: normal 10pt Arial
 }
 
 section {
@@ -15,7 +16,19 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.322);
+    text-align: center;
+}
 
+select#flista {
+    width: 200px;
+}
+
+div#res {
+    margin-top: 10px;
+}
+
+div#btns {
+    margin-top: 10px;
 }
 
 footer {
