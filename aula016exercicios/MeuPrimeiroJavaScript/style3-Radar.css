@@ -19,12 +19,31 @@ section {
     text-align: center;
 }
 
-div#res {
-    margin-top: 30px;
-    background: rgb(227, 236, 250);
+div#area {
+    background: black;
+    color: white;
+    border-radius: 50px;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+
+div#vel {
+    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 5px;
+    text-align: center;
+}
+
+div#res {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 div#btns {

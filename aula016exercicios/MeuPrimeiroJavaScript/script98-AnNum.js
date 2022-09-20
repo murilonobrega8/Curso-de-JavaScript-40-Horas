@@ -63,5 +63,5 @@ function encerrar() {
 }
 
 function voltar() {
-        window.location.href="page2-Nome.html";
+        window.location.href="page3-Radar.html";
 }

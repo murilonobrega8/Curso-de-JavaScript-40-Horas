@@ -2,11 +2,11 @@ let sobrenome = document.querySelector('input#txtnome')
 var res = document.querySelector('div#res')
 
 function analisar() {
-        res.innerHTML = `Bem vindo(a), ${sobrenome}! Seu sobrenome tem ${sobrenome.length} letras. Escrito em maiúsculas dessa maneira (${sobrenome.toUpperCase()}) e em minúsculas dessa maneira (${sobrenome.toLowerCase()})!`
+        res.innerHTML = `Bem vindo(a), ${sobrenome.value}! Seu sobrenome tem ${sobrenome.value.length} letras. Escrito em maiúsculas dessa maneira (${sobrenome.value.toUpperCase()}) e em minúsculas dessa maneira (${sobrenome.value.toLowerCase()})!`
 }
 
 function continuar() {
-        window.location.href="page98-AnNum.html";
+        window.location.href="page3-Radar.html";
 }
 
 function encerrar() {
