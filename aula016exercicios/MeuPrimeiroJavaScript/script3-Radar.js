@@ -10,8 +10,7 @@ a.addEventListener('mouseenter', entrar)
 a.addEventListener('mouseout', sair)
 
 function clicar() {
-        vel.innerHTML = `Velocímetro: ${(sf-si)*20}km/h`
-        res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h!`
+        vel.innerHTML = `Detectando velocidade...`
         var data = new Date();
         si = data.getSeconds();
         a.innerText = 'Solte e Reduza!'
@@ -22,11 +21,19 @@ function clicar() {
 function soltar() {
         var data = new Date();
         sf = data.getSeconds();
-        if ((sf-si)*20 < 61) {
+        if (sf-si < 0) {
+                vel.innerHTML = `Radar com defeito! Dessa vez você deu sorte!`
+                res.innerHTML = `A velocidade máxima atingida não foi detectada!`
+        } else if (sf-si == 0) {
+                a.innerText = 'Aceleração zero!'
+                a.style.background = 'blue'
+                vel.innerHTML = `Velocímetro: ${(sf-si)*20}km/h`
+                res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h! Veículo no Neutro, acelere novamente!`
+        } else if ((sf-si)*20 < 61) {
                 a.innerText = 'Reduzindo velocidade!'
                 a.style.background = 'blue'
                 vel.innerHTML = `Velocímetro: ${(sf-si)*20}km/h`
-                res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h!`
+                res.innerHTML = (`A velocidade máxima atingida foi de ${(sf-si)*20}km/h! Velocidade dentro do limite! Dirija sempre com cinto de segurança!`)
         } else if ((sf-si)*20 < 100) {
                 a.innerText = 'MULTADO!'
                 a.style.background = 'red'
@@ -52,7 +59,7 @@ function sair() {
 }
 
 function continuar() {
-        window.location.href="page98-AnNum.html";
+        window.location.href="page97-AnEle.html";
 }
 
 function encerrar() {

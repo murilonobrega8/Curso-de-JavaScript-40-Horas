@@ -58,10 +58,14 @@ function finalizar() {
         }
 }
 
+function continuar() {
+        window.location.href="page98-AnNum.html";
+}
+
 function encerrar() {
         window.location.assign("page99-Fim.html");
 }
 
 function voltar() {
-        window.location.href="page97-AnEle.html";
+        window.location.href="page3-Radar.html";
 }
