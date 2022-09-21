@@ -1,5 +1,8 @@
 var nome = window.prompt('Qual é seu nome?')
-alert('É um grande prazer em te receber, ' + nome + '!')
+var país = window.prompt('Qual é seu país?')
+var names = {name: nome, country: país}
+
+alert('É um grande prazer em te receber aí do ' + names.country + ', ' + names.name + '!')
 
 let a = window.document.querySelector('div#area')
 a.addEventListener('click', clicar) 

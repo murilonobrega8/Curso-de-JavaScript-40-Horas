@@ -37,7 +37,7 @@ function contar() {
 }
 
 function continuar() {
-    window.location.href="page07-Tabuada.html";
+    window.location.href="page97-AnEle.html";
 }
 
 function encerrar() {
@@ -45,5 +45,5 @@ function encerrar() {
 }
 
 function voltar() {
-    window.location.href="page05-Idade.html";
+    window.location.href="page06-Contador.html";
 }
