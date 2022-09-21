@@ -21,7 +21,7 @@ function sair() {
 }
 
 function continuar() {
-        window.location.assign("page2-Nome.html");
+        window.location.assign("page02-Nome.html");
 }
 
 function encerrar() {

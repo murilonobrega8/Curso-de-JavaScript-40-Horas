@@ -6,7 +6,7 @@ function analisar() {
 }
 
 function continuar() {
-        window.location.href="page3-Radar.html";
+        window.location.href="page03-Radar.html";
 }
 
 function encerrar() {
@@ -14,5 +14,5 @@ function encerrar() {
 }
 
 function voltar() {
-        window.location.href="page1-Home.html";
+        window.location.href="page01-Home.html";
 }

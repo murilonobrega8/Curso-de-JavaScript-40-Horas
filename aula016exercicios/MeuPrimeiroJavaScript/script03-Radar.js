@@ -28,24 +28,29 @@ function soltar() {
                 a.innerText = 'Aceleração zero!'
                 a.style.background = 'blue'
                 vel.innerHTML = `Velocímetro: ${(sf-si)*20}km/h`
-                res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h! Veículo no Neutro, acelere novamente!`
+                res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h! `
+                res.innerHTML += `Veículo no Neutro, acelere novamente!`
         } else if ((sf-si)*20 < 61) {
                 a.innerText = 'Reduzindo velocidade!'
                 a.style.background = 'blue'
                 vel.innerHTML = `Velocímetro: ${(sf-si)*20}km/h`
-                res.innerHTML = (`A velocidade máxima atingida foi de ${(sf-si)*20}km/h! Velocidade dentro do limite! Dirija sempre com cinto de segurança!`)
+                res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h! `
+                res.innerHTML += `Velocidade dentro do limite permitido! `
+                res.innerHTML += `Dirija sempre com cinto de segurança!`
         } else if ((sf-si)*20 < 100) {
                 a.innerText = 'MULTADO!'
                 a.style.background = 'red'
                 vel.innerHTML = `Velocímetro: ${(sf-si)*20}km/h`
-                res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h! Multa GRAVE!`
+                res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h! `
+                res.innerHTML += `Multa GRAVE! Velocidade acima do limite permitido! `
+                res.innerHTML += `Dirija sempre com cinto de segurança!`
         } else {
                 a.innerText = 'MULTADO!'
                 a.style.background = 'red'
                 vel.innerHTML = `Velocímetro: ${(sf-si)*20}km/h`
-                res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h! Multa GRAVÍSSIMA! CNH SUSPENSA!`
+                res.innerHTML = `A velocidade máxima atingida foi de ${(sf-si)*20}km/h! `
+                res.innerHTML += `Velocidade muito acima do limite permitido! Multa GRAVÍSSIMA e CNH SUSPENSA!`
         }
-        
 }
 
 function entrar() {
@@ -59,7 +64,7 @@ function sair() {
 }
 
 function continuar() {
-        window.location.href="page97-AnEle.html";
+        window.location.href="page04-Hora.html";
 }
 
 function encerrar() {
@@ -67,5 +72,5 @@ function encerrar() {
 }
 
 function voltar() {
-        window.location.href="page2-Nome.html";
+        window.location.href="page02-Nome.html";
 }
