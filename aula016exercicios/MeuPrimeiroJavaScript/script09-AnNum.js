@@ -63,5 +63,5 @@ function encerrar() {
 }
 
 function voltar() {
-        window.location.href="page97-AnEle.html";
+        window.location.href="page08-AnEle.html";
 }

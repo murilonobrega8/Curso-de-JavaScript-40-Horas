@@ -12,15 +12,14 @@
         <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="dados">
-            <p>Selecione os valores da contagem abaixo.</p>
-            <p>Início: <input type="number" name="inicio" id="txti" style="width: 80px; margin-right: 5px; margin-left: 15px"></p>
-            <p>Fim: <input type="number" name="fim" id="txtf" style="width: 80px; margin-right: 5px; margin-left: 28px"></p>
-            <p>Passo: <input type="number" name="passo" id="txtp" style="width: 80px; margin-right: 5px; margin-left: 6px"></p> 
-            <p><input type="button" value="Contar" onclick="contar()"></p>
+        <div>
+            <p>Número: <input type="number" name="num" id="txtn" style="height: 20px;">
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
         </div>
         <div id="res">
-            Preparando a contagem...
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima. </option>
+            </select>
         </div>
         <div id="btns">
             <br><input type="button" value="<¬ Voltar" style="margin-right: 185px; width: 100px; height: 30px; border-radius: 10px" onclick="voltar()" > <input type="button" value="Encerrar" style="width: 100px; height: 30px; border-radius: 10px" onclick="encerrar()"> <input type="button" value="Continuar ¬>" style="width: 100px; height: 30px; border-radius: 10px" onclick="continuar()">

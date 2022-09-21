@@ -19,7 +19,7 @@ function verificar() {
 }
 
 function continuar() {
-        window.location.href="page98-AnNum.html";
+        window.location.href="page09-AnNum.html";
 }
 
 function encerrar() {
@@ -27,5 +27,5 @@ function encerrar() {
 }
 
 function voltar() {
-        window.location.href="page06-Contador.html";
+        window.location.href="page7-Tabuada.html";
 }
