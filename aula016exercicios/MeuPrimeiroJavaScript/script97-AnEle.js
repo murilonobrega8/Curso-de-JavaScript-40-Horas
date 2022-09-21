@@ -27,5 +27,5 @@ function encerrar() {
 }
 
 function voltar() {
-        window.location.href="page05-Idade.html";
+        window.location.href="page06-Contador.html";
 }

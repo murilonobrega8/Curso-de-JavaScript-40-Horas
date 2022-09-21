@@ -56,7 +56,7 @@ function carregarDia() {
 
 function mudarHora() {
     let nhora = document.querySelector('input#nhora')
-    if (nhora.value == '') {
+    if (nhora.value.length == 0) {
         msg.innerHTML = 'Por favor preencha com um número de 0-24!'
     } else if (nhora.value < 0 || nhora.value > 24) {
         msg.innerHTML = 'Valor inválido. Digite entre 0-24!'
@@ -68,8 +68,7 @@ function mudarHora() {
 }
 
 function horaOf() {
-    var data2 = new Date()
-    hora = data2.getHours()
+    hora = data.getHours()
     carregar()
 }
 

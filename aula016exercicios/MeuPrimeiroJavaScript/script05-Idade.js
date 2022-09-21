@@ -55,7 +55,7 @@ function verificar() {
 }
 
 function continuar() {
-    window.location.href="page97-AnEle.html";
+    window.location.href="page06-Contador.html";
 }
 
 function encerrar() {
